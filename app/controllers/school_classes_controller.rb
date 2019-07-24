@@ -5,6 +5,7 @@ class SchoolClassesController < ActionController::Base
   end
   
   def create
+    @class = SchoolClass.new
   end
   
   def show
