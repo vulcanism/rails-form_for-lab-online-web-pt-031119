@@ -8,6 +8,7 @@ class SchoolClassesController < ActionController::Base
   end
   
   def show
+    @class = SchoolClass.find
   end
   
   def edit
