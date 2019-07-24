@@ -1,1 +1,1 @@
-class StudentsController <
+class StudentsController < ActionController::Base
