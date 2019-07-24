@@ -8,7 +8,7 @@ class SchoolClassesController < ActionController::Base
   end
   
   def show
-    @class = SchoolClass.find
+    @class = SchoolClass.find(params[:id])
   end
   
   def edit
