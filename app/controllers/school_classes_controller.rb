@@ -5,7 +5,7 @@ class SchoolClassesController < ActionController::Base
   end
   
   def create
-    @class = SchoolClass.new()
+    @class = SchoolClass.new(params.require(:school_class).permit(:title, :room_number))
   end
   
   def show
