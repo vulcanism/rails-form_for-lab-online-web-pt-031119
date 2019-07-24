@@ -17,6 +17,11 @@ ActiveRecord::Schema.define(version: 20190724190633) do
     t.integer "room_number"
   end
 
+  create_table "school_classes", force: :cascade do |t|
+    t.string  "title"
+    t.integer "room_number"
+  end
+
   create_table "students", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
