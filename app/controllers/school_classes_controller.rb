@@ -6,6 +6,8 @@ class SchoolClassesController < ActionController::Base
   
   def create
     @class = SchoolClass.new(params.require(:school_class).permit(:title, :room_number))
+    @class.save
+    redirect_to 
   end
   
   def show
