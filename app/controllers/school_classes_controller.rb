@@ -12,6 +12,7 @@ class SchoolClassesController < ActionController::Base
   end
   
   def edit
+    @class = SchoolClass.find(params[:id])
   end
   
   def update
